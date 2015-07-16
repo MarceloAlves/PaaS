@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PaaS - Platform as a Service</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>PaaS</h1>
+        <p>Encode/Decode Google Map Polylines</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Encode</h2>
+
+            <p><b>Endpoint:</b> <code>POST /encode</code></p>
+
+            <p><b>Body:</b><code>application/json</code></p>
+
+            <pre>{"points": [[51.02079,8.45751],[50.87197,8.27074],[50.59383,8.12792],[50.92048,7.875229999999999],[50.88583,7.688459999999999],[50.60777,7.292959999999999],[50.36311,6.743639999999999],[50.31403,6.403059999999999],[50.719190000000005,6.029529999999999],[51.093300000000006,5.98558],[51.464400000000005,6.17235],[51.77816000000001,6.029529999999999],[51.92745000000001,6.8534999999999995],[52.22456000000001,7.062239999999999],[52.43269000000001,7.6225499999999995],[52.29180000000001,7.93016],[52.00191000000001,7.91368],[52.13024000000001,8.35863],[52.379070000000006,8.40258],[52.513000000000005,8.66625],[52.379070000000006,8.74315],[52.459480000000006,9.12767],[52.224560000000004,8.91344],[52.039100000000005,9.177109999999999],[51.77816000000001,9.39684],[51.47466000000001,9.254019999999999],[51.43701000000001,8.880479999999999],[51.25516000000001,8.561879999999999],[51.20357000000001,8.803579999999998],[51.06914000000001,8.715689999999999],[51.01734000000001,8.473989999999999]]}</pre>
+
+            <p><b>Response:</b></p>
+
+            <pre>"}~kvHmzrr@ba\\hnc@jiu@r{Zqx~@hjp@pwEhnc@zhu@zflAbxn@fhjBvqHroaAgcnAp}gAeahAtqGkngAinc@_h|@r{Zad\\y|_D}_y@swg@ysg@}llBpoZqa{@xrw@~eBaaX}{uAero@uqGadY}nr@`dYs_NquNgbjAf{l@|yh@bfc@}nr@z}q@i|i@zgz@r{ZhjFr}gApob@ff}@laIsen@dgYhdPvbIren@"
+            </pre>
+          </div>
+          <div class="col-md-6">
+            <h2>Decode</h2>
+
+            <p><b>Endpoint:</b> <code>POST /decode</code></p>
+
+            <p><b>Body:</b><code>application/json</code></p>
+
+            <pre>{"polyline": "}~kvHmzrr@ba\\hnc@jiu@r{Zqx~@hjp@pwEhnc@zhu@zflAbxn@fhjBvqHroaAgcnAp}gAeahAtqGkngAinc@_h|@r{Zad\\y|_D}_y@swg@ysg@}llBpoZqa{@xrw@~eBaaX}{uAero@uqGadY}nr@`dYs_NquNgbjAf{l@|yh@bfc@}nr@z}q@i|i@zgz@r{ZhjFr}gApob@ff}@laIsen@dgYhdPvbIren@"}</pre>
+
+            <p><b>Response:</b></p>
+
+            <pre>[[51.02079,8.45751],[50.87197,8.27074],[50.59383,8.12792],[50.92048,7.875229999999999],[50.88583,7.688459999999999],[50.60777,7.292959999999999],[50.36311,6.743639999999999],[50.31403,6.403059999999999],[50.719190000000005,6.029529999999999],[51.093300000000006,5.98558],[51.464400000000005,6.17235],[51.77816000000001,6.029529999999999],[51.92745000000001,6.8534999999999995],[52.22456000000001,7.062239999999999],[52.43269000000001,7.6225499999999995],[52.29180000000001,7.93016],[52.00191000000001,7.91368],[52.13024000000001,8.35863],[52.379070000000006,8.40258],[52.513000000000005,8.66625],[52.379070000000006,8.74315],[52.459480000000006,9.12767],[52.224560000000004,8.91344],[52.039100000000005,9.177109999999999],[51.77816000000001,9.39684],[51.47466000000001,9.254019999999999],[51.43701000000001,8.880479999999999],[51.25516000000001,8.561879999999999],[51.20357000000001,8.803579999999998],[51.06914000000001,8.715689999999999],[51.01734000000001,8.473989999999999]]
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
